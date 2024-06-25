@@ -17,5 +17,5 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_PROJECT_KEY: producer-prototype
-          SONAR_ORGANIZATION: smeefie
+          SONAR_PROJECT_KEY: Smeefie_ProducerPrototype
+          SONAR_ORGANIZATION: Smeef
