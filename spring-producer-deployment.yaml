@@ -7,8 +7,8 @@ spec:
     app: producer-service
   ports:
     - protocol: "TCP"
-      port: 8080
-      targetPort: 8080
+      port: 8086
+      targetPort: 8086
   type: ClusterIP
 ---
 apiVersion: apps/v1
@@ -30,7 +30,7 @@ spec:
           image: smeefie/producerprototype:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
-          env:
-            - name: kafka-service
-              value: "kafka-service"
+            - containerPort: 8086
+#          env:
+#            - name: kafka-service
+#              value: "kafka-service"
