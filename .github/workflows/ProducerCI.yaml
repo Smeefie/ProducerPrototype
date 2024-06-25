@@ -40,7 +40,7 @@ on:
 
 jobs:
   build-deploy:
-    name: Build and Deploy Spring Boot App
+    name: Build and Deploy the App
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout code

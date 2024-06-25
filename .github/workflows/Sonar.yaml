@@ -1,4 +1,4 @@
-name: Sonar
+name: Sonar Scan
 on:
   push:
     branches:
@@ -16,3 +16,5 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_PROJECT_KEY: producer-prototype
+          SONAR_ORGANIZATION: smeefie
