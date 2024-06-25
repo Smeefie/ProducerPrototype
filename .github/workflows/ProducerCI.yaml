@@ -1,6 +1,9 @@
 name: Docker Build
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   docker:
@@ -27,5 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          #          platform: linux/amd64
           tags: smeefie/producerprototype:latest
