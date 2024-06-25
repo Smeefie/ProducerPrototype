@@ -1,4 +1,5 @@
-name: Sonar Scan
+name: Scan the App with Sonar
+
 on:
   push:
     branches:
