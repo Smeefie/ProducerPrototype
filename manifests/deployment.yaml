@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ProducerWorkflow
+  labels:
+    app: ProducerWorkflow
+    kubernetes.azure.com/generator: devhub
+  namespace: namespace-workflow-1719350140116
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ProducerWorkflow
+  template:
+    metadata:
+      labels:
+        app: ProducerWorkflow
+    spec:
+      containers:
+        - name: ProducerWorkflow
+          image: acrworkflow1719350140116.azurecr.io/image-workflow-1719350140116:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8086
