@@ -16,6 +16,6 @@ RUN mvn dependency:go-offline
 COPY src src
 
 FROM openjdk:20-jdk
-MAINTAINER "Smeefie"
-COPY target/producer-prototype-0.0.1-SNAPSHOT.jar producer-prototype-0.0.1-SNAPSHOT.jar
+MAINTAINER "smeefie"
+COPY target/ProducerPrototype-0.0.1-SNAPSHOT.jar producer-prototype-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java", "-jar", "producer-prototype-0.0.1-SNAPSHOT.jar"]
