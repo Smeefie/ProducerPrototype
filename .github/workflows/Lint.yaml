@@ -13,6 +13,8 @@ jobs:
       - name: Run linter
         uses: github/super-linter@v4.7.3
         env:
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
